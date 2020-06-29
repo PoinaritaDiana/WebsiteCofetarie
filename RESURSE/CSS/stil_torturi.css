@@ -1,0 +1,121 @@
+.text, .text1{
+    box-sizing: border-box;
+    width:95%;
+    margin:auto;
+    margin-top:1%;
+    margin-bottom:1%;
+    padding:1%;
+    border-radius: 1rem;
+    box-shadow: #853028 0px 0px 10px;
+    background-color: white;
+}
+
+.containertext{   
+    padding:10px; 
+    border: 3px solid  #350500;
+}
+.containertext{   
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("../IMAGINI/Torturi/back.jpg");
+}
+
+/* Galerie statica */
+#gr{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#gr figcaption {
+    padding:2%;
+}
+#gr img {
+    width:100%;
+}
+figure{
+    margin:2%;
+}
+#gr figure:hover {
+    box-shadow: #853028 0px 0px 10px;
+}
+
+
+.containertext1{   
+    width:59%;
+    margin-left:1%;
+    float:left;
+    box-sizing: border-box;
+    padding:10px; 
+    border: 3px solid  #350500;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("../IMAGINI/Torturi/backbaby.jpg");
+}
+
+.containerpozebotez{  
+    float:left;
+    width:40%;
+    text-align:center;
+    overflow:hidden;
+}
+.containerpozebotez img{  
+    margin:auto;
+    box-sizing: border-box;
+    border: 3px solid  #350500;
+}
+
+
+.w3-button{
+    border:none;
+    padding:8px 16px;
+    vertical-align:middle;
+    overflow:hidden;
+    text-decoration:none;
+    color:inherit;
+    background-color:inherit;
+    text-align:center;
+    cursor:pointer;
+    white-space:nowrap
+}
+.w3-button:hover{
+    color:#000!important;
+    background-color:#ccc!important
+}
+.w3-light-grey{color:#000!important;
+    background-color:#f1f1f1!important
+}
+.w3-center, .w3-content {
+    text-align:center;
+}
+.w3-center{
+    padding-top:1%;
+}
+
+#torturidebotez{
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+#torturidebotez:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  
+/* Media Pagina Torturi */
+@media  (max-width: 499.98px){
+    #gr{
+      grid-template-columns: 100%;
+    }
+}
+
+
+@media (min-width: 500px) and (max-width: 950px){
+  #gr{
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 1040px){
+    .containerpozebotez, .containertext1{
+        margin:2%;
+        width: 100%;
+      }
+}

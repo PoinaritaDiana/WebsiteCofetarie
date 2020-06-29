@@ -1,0 +1,57 @@
+<header id="inceput">
+    <nav id="navbar">
+        <ul id="meniu">
+            <li class="left"> <a href="/index">Home</a> </li>
+
+            <li class="left" id="sm1"> <a href="/torturi">Torturi</a>
+                <ul id="submeniu1">
+                    <li><a href="/torturi#torturidenunta">Torturi de nuntă</a></li>
+                    <li><a href="/torturi#torturidebotez">Torturi de botez</a></li>
+                </ul>
+            </li>
+
+            <li class="left"> <a href="/candybar">Candy Bar</a> </li>
+            <li class="left"> <a href="/cofetarie">Cofetarie</a> </li>
+
+            <li class="left" id="sm2"> <a href="/patiserie">Patiserie</a>
+                <ul id="submeniu2">
+                    <li><a href="/patiserie#patiserie_sarata">Patiserie sărată</a></li>
+                    <li><a href="/patiserie#patiserie_dulce">Patiserie dulce</a></li>
+                </ul>
+            </li>
+
+            <% if(!locals.email) { %>
+                <li class="right" id="sm3"> <a href="/contulmeu">Contul meu</a>
+                    <ul id="submeniu3">
+                        <form method="post" action="/login">
+                            <label>
+                            Email: <br><input class="select" type="text" name="email" value="">
+                        </label>
+                            <br>
+                            <label>
+                            Parola: <br> <input class="select" type="password" name="parola" value="">
+                        </label>
+                            <br>
+                            <input type="submit" value="LOGIN" />
+                        </form>
+                        <% } else { %>
+                            <li class="right"><a class="logat" href="/logout"> Logout</a></li>
+                            <li class="right"><a class=" logat " href="/contulmeu "> Salut, <%= locals.prenume %></a></li>
+                    <% } %>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+    <% if(locals.attempts) { %> 
+        <% if(locals.attempts<=3) { %> 
+            <div class="incercari"> Ati gresit parola de <%= locals.attempts %> ori !!!</div>
+            <% } %> 
+        <% if(locals.attempts>=3) { %> 
+            <div class="incercari"> Nu va mai puteti conecta pentru 5 secunde!!!</div>
+        <% } %> 
+
+    <% } %> 
+    <h1>COFETĂRIA SAVOR</h1>
+</header>

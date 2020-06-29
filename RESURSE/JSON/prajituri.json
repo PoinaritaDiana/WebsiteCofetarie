@@ -1,0 +1,130 @@
+{
+    "lastId": 13,
+    "prajituri": [
+      {
+        "id": 1,
+        "denumire": "Mini pateuri cu brânză sărată",
+        "gramaj": 10,
+        "pret": 63,
+        "post":false,
+        "bucata":false,
+        "ingrediente": ["aluat", "branza", "telemea", "ou"],
+        "tipprodus": "patiserie"
+      },
+      {
+        "id": 2,
+        "denumire": "Mini pateuri cu ciuperci",
+        "gramaj": 10,
+        "pret": 63,
+        "post":true,
+        "bucata":false,
+        "ingrediente": ["aluat", "ciuperci", "ceapa", "usturoi", "marar"],
+        "tipprodus": "patiserie"
+      },
+      {
+        "id": 3,
+        "denumire": "Sărățele cu susan",
+        "gramaj": 8,
+        "pret": 60,
+        "post":true,
+        "bucata":false,
+        "ingrediente": ["aluat", "susan"],
+        "tipprodus": "patiserie"
+      },
+      {
+        "id": 4,
+        "denumire": "Ștrudel cu mere",
+        "gramaj": 100,
+        "pret": 3,
+        "post":true,
+        "bucata":true,
+        "ingrediente": ["aluat", "mere", "scortisoara"],
+        "tipprodus": "patiserie"
+      },
+      {
+        "id": 5,
+        "denumire": "Cozonac cu nucă, cacao și rahat",
+        "gramaj": 1000,
+        "pret": 49,
+        "post":true,
+        "bucata":true,
+        "ingrediente": ["aluat", "nuca", "cacao", "rahat"],
+        "tipprodus": "patiserie"
+      },
+      {
+        "id": 6,
+        "denumire": "Rulou Chantilly",
+        "gramaj": 200,
+        "pret": 5,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["aluat", "vanilie", "zahar", "miere"],
+        "tipprodus": "prajitura"
+      },
+      {
+        "id": 7,
+        "denumire": "Prajitura Majestic",
+        "gramaj": 100,
+        "pret": 7,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["unt", "ou", "faina", "ciocolata", "frisca", "lapte", "zahar"],
+        "tipprodus": "prajitura"
+      },
+      {
+        "id": 8,
+        "denumire": "Crema de zahar ars",
+        "gramaj": 110,
+        "pret": 6,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["ou", "vanilie", "lapte", "zahar"],
+        "tipprodus": "prajitura"
+
+      },
+      {
+        "id": 9,
+        "denumire": "Mousse Ciocolata",
+        "gramaj": 110,
+        "pret": 8,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["unt", "ou", "crema", "ciocolata", "frisca", "lapte", "zahar"],
+        "tipprodus": "prajitura"
+
+      },
+      {
+        "id": 10,
+        "denumire": "Prajitura Pavlova",
+        "gramaj": 110,
+        "pret": 7,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["unt", "ou", "crema", "frisca", "fructe", "zahar"],
+        "tipprodus": "prajitura"
+
+      },
+      {
+        "id": 11,
+        "denumire": "Prajitura Trilogie",
+        "gramaj": 100,
+        "pret": 7,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["unt", "ou", "faina", "ciocolata", "frisca", "lapte", "zahar", "fructe"],
+        "tipprodus": "prajitura"
+
+      },
+      {
+        "id": 12,
+        "denumire": "Prajitura Amandina",
+        "gramaj": 120,
+        "pret": 5,
+        "post":false,
+        "bucata":true,
+        "ingrediente": ["unt", "ou", "faina", "cacao", "lapte", "zahar", "rom"],
+        "tipprodus": "prajitura"
+
+      }
+    ]
+  }

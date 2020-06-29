@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title> Home - Cofetăria Savor </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/stil_comun.css">
+    <link rel="stylesheet" href="/CSS/prajituri.css">
+    <link rel="stylesheet" href="/CSS/stil_buton_top.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/IMAGINI/favicon.ico">
+    <script src="JAVASCRIPT/ejs.min.js"></script>
+    <script type="text/javascript" src="JAVASCRIPT/scroll_top.js"></script>
+    <script src="JAVASCRIPT/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="author" content="Poinarita Diana">
+    <meta name="description" content="Cofetarie">
+    <meta name="keywords" content="prajituri, cofetarie, torturi, candy bar, dulciuri">
+</head>
+
+<body>
+    <%- include('../fragmente/header.ejs') %>
+    <button id="myBtn" title="Go to top">Top</button>
+    <main>
+        <div class="fundal">
+            <div id="container_butoane">
+                <label>SORTEAZA PRET:
+                    <select id="sort">
+                        <option value="cr"> crescator </option>
+                        <option value="dcr"> descrescator </option>
+                    </select>
+                </label>
+                <br>
+                <div> PRODUSE:
+                    <label>
+                        <input id="rad1" name="filt" value="1" type="radio" />
+                        Produse de post
+                    </label>
+                    <label>
+                        <input id="rad2" name="filt" value="2" type="radio" />
+                        Produse de patiserie
+                    </label>
+                    <label>
+                        <input id="rad3" name="filt" value="3" type="radio" />
+                        Prajituri
+                    </label>
+                    <button id="filtprod">FILTREAZA</button>
+                </div>
+                <br>
+                <button id="reset">RESETEAZA SORTARE/FILTRARE</button>
+                <br>
+                <br>
+                <button id="calcmin">PRET MINIM </button>
+                <button id="calcmax">PRET MAXIM </button>
+                <div id="calcularepret"></div>
+                <button id="suma">SUMA PRODUSE SELECTATE</button>
+                <div id="calcularesuma"> Suma produselor selectate: </div>
+            </div>
+        </div>
+
+        <p id="comanda">Prajiturile disponibile pentru comanda ale cofetariei Savor:</p>
+
+        <div class="afis" id="afisTemplate">
+        </div>
+
+    </main>
+    <%- include('../fragmente/footer.ejs') %>
+</body>
+
+</html>

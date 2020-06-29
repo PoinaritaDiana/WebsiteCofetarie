@@ -1,0 +1,72 @@
+.afis{
+	border: 4px solid #350500;
+	padding:0.7em;
+	margin:0.7em;
+}
+
+.templ_prajitura{
+	border:1px solid grey;
+	padding-left:0.7em;
+	margin:0.7em;
+	background-color: RGBA(133, 48, 40,.5);
+	cursor: pointer;
+}
+
+#container_butoane{
+	box-sizing: border-box;
+    width:80%;
+    margin:auto;
+    margin-top:3%;
+    margin-bottom:3%;
+    padding:2%;
+	border: 3px solid black;
+    background-color: white;
+}
+
+p{
+	line-height: 0.8;
+}
+
+.templ_prajitura:hover {
+	box-shadow: #350500 0px 0px 10px;
+}
+
+#comanda{
+	margin-left:5%;
+}
+
+.hidefilt{
+	display:none;
+}
+
+.selecttemplate{
+	background-color: #350500;
+    color:white; 
+}
+
+.divcalcpret, #calcularesuma{
+	margin :1%;
+	padding: 2%;
+	box-sizing: border-box;
+	border: 1px solid black
+}
+
+.fundal{   
+    padding:10px; 
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("../IMAGINI/aplicatiejs.jpg");
+    border-top: 3px solid  #350500;
+    border-bottom: 3px solid  #350500;
+}
+
+#filtprod, #reset, #calcmin, #calcmax, #suma{
+    margin-left:1%;
+    border: 1px solid black;
+    outline: none;
+    background-color: #350500;
+    color: white;
+    cursor: pointer;
+    padding: 0.4%;
+}
+#filtprod:hover, #reset:hover, #calcmin:hover, #calcmax:hover, #suma:hover {
+  background-color: #555;
+}

@@ -1,0 +1,112 @@
+main section{
+    border-top: 4px solid  #350500;
+    padding: 10px;
+    background: linear-gradient(rgba(255,255,255,.85), rgba(255,255,255,.85)),  url("../IMAGINI/Patiserie/background.jpg");
+}
+
+.tc{
+	text-decoration: none;
+    color: black;
+    position:relative;
+}
+a.tc:hover{
+	color: #853028;
+}  
+.tc:before{
+    content: "";
+	position: absolute;
+	width: 100%;
+	height: 4px;
+	bottom: 0;
+	left: 0;
+	background-color: #350500;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+	height: 1px;
+}
+.tc:hover:before{
+	visibility: visible;
+	-webkit-transform:scaleX(1);
+	transform: scaleX(1);
+}
+
+div.transbox {
+    margin: 10px;
+    background: rgba(255,255,255,.85);
+    border: 1px solid #350500;
+}
+#gr1, #gr2{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+
+#gr1 .container, #gr2 .container{
+    box-sizing: border-box;
+    border: 3px solid #350500;
+    border-radius: 1rem;
+    background-color: rgba(219, 216, 208,0.7);
+    text-align: center;
+    position: relative;
+}
+  
+#gr1 figure, #gr2 figure {
+    box-sizing: border-box;
+    border: 3px dashed #350500;
+    text-align: center;
+    background-color: white;
+}
+
+#gr1 img, #gr2 img {
+    width:100%;
+}
+
+#gr1 figcaption, #gr2 figcaption{
+    padding:3%;
+}
+
+.post{
+    position: absolute; 
+    top:3%;
+    box-sizing: border-box;
+    background-color: #07360b;
+    padding: 3px;
+    color: white;
+    font-size:0.90em;
+}
+
+.text {
+    color: black;
+    box-sizing: border-box;
+    padding:4%;
+    font-size:0.9em;
+    text-align: justify;
+}
+
+#gr1 figure:hover, #gr2 figure:hover{
+    box-shadow: #350500 0px 0px 8px;
+    -ms-transform: scale(1.1); 
+    -webkit-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+/* Media */
+@media (max-width: 649.98px){
+    #gr1, #gr2{
+      grid-template-columns: auto;
+    }
+}
+
+
+@media (min-width: 650px)  and (max-width: 1200px){
+    #gr1, #gr2{
+      grid-template-columns: auto auto;
+    }
+}
+
+
+
+
+

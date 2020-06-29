@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <title> Home - Cofetăria Savor </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/stil_comun.css">
+        <link rel="stylesheet" href="/CSS/stil_page404.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/IMAGINI/favicon.ico">
+	    <meta charset="UTF-8">
+	    <meta name="author" content="Poinarita Diana">
+	    <meta name="description" content="Cofetarie">
+        <meta name="keywords" content="prajituri, cofetarie, torturi, candy bar, dulciuri">
+    </head>
+    <%- include('../fragmente/header.ejs') %>
+    <body>
+        <div id="mesaj">
+            <p id="mesaj404"> 404 </p>
+            <p> UH OH! You're lost!</p>
+            <p> Pagina pe care o cautati nu exista. <br>Apasati pe buton pentru a va intoarce la pagina principala. </p>
+            <button class="btnhome" onclick="document.location='index.ejs'">HOME</button>
+        </div>
+        <div>
+            <img alt="cakesDoodles" src="../IMAGINI/page404img.jpg">
+        </div>
+    </body>
+</html>

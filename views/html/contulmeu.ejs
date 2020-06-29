@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title> Cosul meu - Cofetăria Savor </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/CSS/stil_comun.css">
+	<link rel="stylesheet" href="/CSS/stil_cont.css">
+	<link rel="stylesheet" href="/CSS/stil_buton_top.css">
+    <script type="text/javascript" src="JAVASCRIPT/varstautilizator.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/marcarepgactiva.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/scroll_top.js"></script>
+	<script type="text/javascript" src="JAVASCRIPT/contscript.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/IMAGINI/favicon.ico">
+	<meta charset="UTF-8">
+	<meta name="author" content="Poinarita Diana">
+	<meta name="description" content="Cofetarie">
+    <meta name="keywords" content="prajituri, cofetarie, torturi, candy bar, dulciuri">
+</head>
+<body>
+<%- include('../fragmente/header.ejs') %>
+<button id="myBtn" title="Go to top">Top</button>
+<main>
+	<label id="labeldn"> Introduceti data nasterii:
+		<input id="datanastere" type="text" value="14#08#2000">
+	</label>
+	<button id="varsta">Calculeaza</button>
+	<br>
+	<div id="continut"></div>
+	<br>
+	<% if(!locals.email) { %>
+		<% if(locals.gresit=="parola") { %>
+			<p>Parola de verificare nu coincide cu parola!</p>
+		 <% }  %>
+		 <% if(locals.gresit=="check") { %>
+			<p>Trebuie sa bifati ca ati citit termenii si conditiile!</p>
+		 <% }  %>
+		 
+		<p>Pentru a putea plasa o comanda, va rugam sa va inregistrati si sa va conectati pe contul creat!</p>
+		<div class="afisaj">
+				<h2>Inregistrare utilizator</h2>
+				
+				<% if(!locals.rsstatus) { %>
+				<form method="post" action="/inreg" class="date"> 
+					<div class="row">
+						<div class="col-25">
+						  <label>Nume de familie </label>
+						</div>
+						<div class="col-75">
+						  <input type="text" name="nume" value="">
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-25">
+						  <label>Prenume </label>
+						</div>
+						<div class="col-75">
+						  <input type="text" name="prenume" value="">
+						</div>
+					</div>
+	  
+					<div class="row">
+						<div class="col-25">
+						  <label>Telefon </label>
+						</div>
+						<div class="col-75">
+						  <input type="text" name="telefon" value="">
+						</div>
+					</div>
+	  
+					<div class="row">
+						<div class="col-25">
+						  <label>Parola </label>
+						</div>
+						<div class="col-75">
+						  <input type="password" name="parola" value="">
+						</div>
+					</div>
+	  
+					<div class="row">
+						  <div class="col-25">
+							<label>Reintroduceti parola </label>
+						  </div>
+						  <div class="col-75">
+							<input type="password" name="rparola" value="">
+						  </div>
+					</div>
+	  
+					<div class="row">
+						  <div class="col-25">
+							<label>Email </label>
+						  </div>
+						  <div class="col-75">
+							  <input type="text" name="email" value=""  size="50">
+						  </div>
+					</div>
+	  
+					<div class="row">
+						  <div class="col-25">
+							<label>Prajiturile preferate (separate cu virgula): </label>
+						  </div>
+						  <div class="col-75">
+							  <input type="text" name="prajituri" value="" size="50">
+						  </div>
+					  </div>
+
+					  <div class="row">
+						<div class="col-25">
+						  <label>Varsta dumneavoastra: </label>
+						</div>
+						<div class="col-75">
+							<input type="number" name="varsta" value="">
+						</div>
+					</div>
+	  
+					<div class="row">
+						<div >
+							<label>
+								<input id="i_check2" name="gr_chck" value="20" type="checkbox"/>
+								Sunt de acord cu <a class="tc" href = "/info#termeni">termenii si conditiile</a>
+							</label>
+						</div>
+						
+	  
+					  <div class="row">
+						<input type="submit" value="Submit">
+					  </div>
+				</form>
+				<% } else if(rsstatus=="ok"){ %>
+					<p>Date introduse</p>
+				<% } else {%>
+					<p>Eroare</p>
+				<% } %>
+				</div>
+			<% } else { %>
+				<p> Apasati <a class="tc" href = "/prajituri">AICI</a> pentru a vedea toate prajiturile disponibile.</p>
+			<% } %>
+
+
+</main>
+<%- include('../fragmente/footer.ejs') %>
+
+</body>
+</html>

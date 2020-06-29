@@ -1,0 +1,139 @@
+.intro, #candynunta, #candybotez{
+    box-sizing: border-box;
+    width:80%;
+    margin:auto;
+    margin-top:3%;
+    margin-bottom:3%;
+    padding:2%;
+    border-radius: 1rem;
+    box-shadow: #853028 0px 0px 10px;
+    background-color: white;
+}
+#candynunta, #candybotez{
+    width:95%;
+    padding: 0.5%;
+    text-align: center;
+    margin-top:1%;
+}
+
+.introsection{   
+    padding:10px; 
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),  url("../IMAGINI/Candy/backcandy.jpg");
+    border-top: 3px solid  #350500;
+    border-bottom: 3px solid  #350500;
+}
+
+#imgnunta{
+    box-sizing: border-box;
+    border:3px solid #350500;
+    width: auto;
+    height: 496px;
+}
+
+#animatnunta figure{
+    margin: 0;
+    border-right: 10px solid white;
+}
+
+#animatnunta{
+    display:flex;
+    width: 100%;
+    height: auto;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+
+/* Galerie animata */
+#container_animatie1{
+	position:relative;
+	overflow:hidden;
+    border:3px solid #350500;
+    width:735px;
+    height:490px;
+    box-sizing:border-box;
+    margin-bottom:3%; 
+}
+#derulant1{
+	display:flex;
+    flex-wrap:nowrap;
+	position:absolute;
+	animation-name: go1;
+	animation-direction:alternate;
+	animation-timing-function:linear;
+	animation-iteration-count:infinite;
+    animation-duration:40s;
+}
+#derulant1>*{
+	flex-shrink: 0;
+    position:relative;
+}
+#container_animatie1 figure:hover figcaption{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:auto;
+  font-size:1.5em;
+  background:rgba(200,200,200,0.5);
+  text-align:center;
+}
+#container_animatie1 *{
+  height:100%;
+  width:auto;
+}
+
+@keyframes go1{
+	0%{
+    	left:0px;
+    }
+	100%{
+		left:-400%;
+	}
+}
+
+/* Galerie statica */
+.gr{
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.gr figure {
+    text-align: center;
+    margin: 1%;
+}
+.gr img {
+    width:100%;
+}
+ 
+.gr figure:hover {
+    box-shadow: #853028 0px 0px 10px;
+}
+  
+
+/* Media */
+  
+@media (max-width: 575.98px) { 
+	.intro{
+        width:95%;
+        margin-top:1%;
+    }
+    .gr{
+        grid-template-columns: auto;
+      }
+      #derulant1{
+        animation-duration:20s;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 699.98px) { 
+	.intro{
+        width:95%;
+        margin-top:1%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 991.98px) { 
+	.intro{
+        width:95%;
+        margin-top:1%;
+    }
+}
